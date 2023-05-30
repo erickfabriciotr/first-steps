@@ -1,0 +1,429 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+  *,
+  *::after,
+  *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+h1:hover {
+  color: #4EFFA1;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 70vw;
+  min-width: 70vw;
+  height: auto;
+  background-color: #000;
+  margin: 5vh auto;
+  /* Grid 2C x 1R */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1;
+  grid-auto-flow: column;
+  box-shadow: .75rem .75rem .75rem #5CB7FF;
+}
+
+
+/* ------ LEFT CONTAINER ------*/
+
+
+.left-container {
+  background-color: #005C6A;
+  color: #FFF;
+  display: grid;
+  /* Grid 1C x 4R */
+  grid-template-columns: 1fr;
+  grid-template-rows: 5;
+  padding-bottom: 2rem;
+}
+
+.profile-photo {
+  width: 20rem;
+  height: 20rem;
+  background: #FFF;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 50%;
+  border-radius: inherit;
+  margin-bottom: 0;
+}
+
+.complete-name {
+  margin-top: 0;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.complete-name > * {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.complete-name > h1 {
+  font-weight: 600;
+}
+
+.complete-name h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.proffesion {
+  margin: 0;
+}
+
+.left-title h2{
+  padding-left: 10%;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  padding-top: 1rem;
+}
+
+.contact-info-list {
+  list-style-type: none;
+}
+
+.contact-info-list li {
+  margin-top: 1rem;
+}
+
+.contact-info-list li > * {
+  color: #FFF;
+  text-decoration: none;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+.telf-number:hover {
+  color: #21ED1A;
+  font-weight: 700;
+}
+
+.li-contact-info:hover {
+  font-weight: 700;
+}
+
+.instagram-name:hover {
+  color: #B54EFF;
+  font-weight: 700;
+}
+
+.education {
+  margin-bottom: 1rem;
+}
+
+.education h2 {
+  margin-top: 2rem;
+}
+
+.education-date,
+.education-title,
+.education-center {
+  display: block;
+  margin-left: 2.5rem;
+}
+
+.education-date,
+.education-title {
+  margin-bottom: .5rem;
+}
+
+.education-date {
+  color: #00eeff;
+}
+
+.education-title {
+  font-weight: 600;
+}
+
+.language {
+  margin-left: 2.5rem;
+}
+
+.language-espanol img {
+  margin-bottom: -.25rem;
+  margin-left: .5rem;
+}
+
+
+.language-ingles img {
+  margin-bottom: -.25rem;
+  margin-left: .5rem;
+}
+
+.languages span {
+  display: block;
+}
+.language {
+  margin-bottom: .5rem;
+}
+
+.languages h2 {
+  margin-top: 2rem;
+}
+
+.spanish-bar {
+  margin: auto;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  align-self: center;
+  width: 70%;
+  height: .5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #14d7ff 90%, #020024 90%);
+}
+
+.english-bar {
+  margin: auto;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  align-self: center;
+  width: 70%;
+  height: .5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #14d7ff 60%, #020024 60%);
+}
+
+
+/* ------ RIGHT CONTAINER ------ */
+
+
+.right-container {
+  background-color: #FFF;
+  display: grid;
+  /* Grid 1C x 4R */
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 40% 30% 1fr;
+}
+
+.self-description {
+  font-weight: 530;
+}
+
+.container-profile {
+  margin-top: 3rem;
+}
+
+
+.right-container h2 {
+  font-size: 1.8rem;
+  color: #005C6A;
+}
+
+.container-experience {
+  display: grid;
+  /* Grid 2C x 3R */
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas:
+  "title-experience title-experience"
+  "fraudalia fraudalia-description"
+  "cesus cesus-description";
+}
+
+.container-profile, 
+.container-experience {
+  margin-left: 4rem;
+  margin-right: 3rem;
+}
+
+.container-experience span {
+  display: block;
+}
+
+.title-experience {
+  grid-area: title-experience;
+  margin-bottom: 3rem;
+}
+
+.fraudalia {
+  grid-area: fraudalia;
+  margin-bottom: 0;
+}
+
+.fraudalia-description {
+  grid-area: fraudalia-description;
+  margin-bottom: 0;
+}
+
+.cesus {
+  grid-area: cesus;
+  margin-top: 0;
+}
+
+.cesus-description {
+  grid-area: cesus-description;
+  margin-top: 0;
+}
+
+.company-name-and-date {
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+.company-name-and-date span {
+  font-size: 1rem;
+  color: #738487;
+  font-weight: 600
+}
+
+.job-date {
+  margin-bottom: .35rem;
+}
+
+.job-title {
+  color: #007886;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: .35rem;
+}
+
+.logo-comunidad-madrid {
+  width: 1.4rem;
+  height: 1.4rem;
+  padding-bottom: 0;
+}
+
+.dynamics_logo {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.container-skills {
+  margin-left: 4rem;
+  display: grid;
+  /* Grid 1C x 3R */
+  grid-template-columns:15% 85%;
+  grid-template-rows: 20% repeat(2, 15%);
+  grid-template-areas: 
+  "skills-title skills-title"
+  "habilidad-html html-bar"
+  "habilidad-css css-bar"
+  "maquetacion-title maquetacion-title"
+  "habilidad-grid grid-bar"
+  "habilidad-flex flex-bar";
+  align-items: center;
+}
+
+.skills-title {
+  grid-area: skills-title;
+  margin-bottom: 0;
+}
+
+.habilidad-html {
+  grid-area: habilidad-html;
+}
+
+.html-bar {
+  grid-area: html-bar;
+  width: 80%;
+  height: .75rem;
+  background: linear-gradient(90deg, #FF8000 90%, #d5d5d5 90%);
+}
+
+.habilidad-css {
+  grid-area: habilidad-css;
+}
+
+.css-bar {
+  grid-area: css-bar;
+  width: 80%;
+  height: .75rem;
+  background: linear-gradient(90deg, #14d7ff 75%, #d5d5d5 75%);
+}
+
+.maquetacion-title {
+  grid-area: maquetacion-title;
+  justify-self: center;
+  font-weight: bold;
+}
+
+.habilidad-grid {
+  grid-area: habilidad-grid;
+  align-self: start;
+}
+
+.grid-bar {
+  grid-area: grid-bar;
+  align-self: start;
+  width: 80%;
+  height: .75rem;
+  background: linear-gradient(90deg, #F04AD6 70%, #d5d5d5 70%);
+}
+
+.habilidad-flex {
+  grid-area: habilidad-flex;
+  align-self: start;
+}
+
+.flex-bar {
+  grid-area: flex-bar;
+  align-self: start;
+  width: 80%;
+  height: .75rem;
+  background: linear-gradient(90deg, #384BAE 50%, #d5d5d5 50%);
+}
+
+
+.container-interest {
+  margin-left: 4rem;
+}
+
+.container-interest ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#intereses {
+  padding-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#aficion {
+  margin-right: .5rem;
+} 
+
