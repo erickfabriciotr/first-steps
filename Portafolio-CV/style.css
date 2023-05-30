@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   overflow-x: hidden;
   color: var(--text-color);
 }
